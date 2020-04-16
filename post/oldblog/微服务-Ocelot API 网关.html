@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微服务 - Ocelot API 网关 | bbigcd</title>
+    <meta name="description" content="Make more time">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.0cbbf90a.css" as="style"><link rel="preload" href="/assets/js/app.fa3e3824.js" as="script"><link rel="preload" href="/assets/js/2.230529bd.js" as="script"><link rel="preload" href="/assets/js/34.086724a3.js" as="script"><link rel="prefetch" href="/assets/js/10.c93fe082.js"><link rel="prefetch" href="/assets/js/11.4bf3ae7f.js"><link rel="prefetch" href="/assets/js/12.01c45e0e.js"><link rel="prefetch" href="/assets/js/13.d9d858d9.js"><link rel="prefetch" href="/assets/js/14.00d956f4.js"><link rel="prefetch" href="/assets/js/15.679c6742.js"><link rel="prefetch" href="/assets/js/16.abbcd59e.js"><link rel="prefetch" href="/assets/js/17.1f5585d5.js"><link rel="prefetch" href="/assets/js/18.149d6c4f.js"><link rel="prefetch" href="/assets/js/19.4dd5acbe.js"><link rel="prefetch" href="/assets/js/20.874851b7.js"><link rel="prefetch" href="/assets/js/21.e8fab656.js"><link rel="prefetch" href="/assets/js/22.74ef4341.js"><link rel="prefetch" href="/assets/js/23.0815466b.js"><link rel="prefetch" href="/assets/js/24.3923d245.js"><link rel="prefetch" href="/assets/js/25.dd992728.js"><link rel="prefetch" href="/assets/js/26.f9a0d7a7.js"><link rel="prefetch" href="/assets/js/27.54f139b7.js"><link rel="prefetch" href="/assets/js/28.070cfa63.js"><link rel="prefetch" href="/assets/js/29.eb08d370.js"><link rel="prefetch" href="/assets/js/3.447720c6.js"><link rel="prefetch" href="/assets/js/30.e66848e4.js"><link rel="prefetch" href="/assets/js/31.0438d4db.js"><link rel="prefetch" href="/assets/js/32.daf1012d.js"><link rel="prefetch" href="/assets/js/33.9f79b5b3.js"><link rel="prefetch" href="/assets/js/35.90c07cc0.js"><link rel="prefetch" href="/assets/js/36.056ad52c.js"><link rel="prefetch" href="/assets/js/4.0f091beb.js"><link rel="prefetch" href="/assets/js/5.4c5d2735.js"><link rel="prefetch" href="/assets/js/6.a4af8558.js"><link rel="prefetch" href="/assets/js/7.8feeb04b.js"><link rel="prefetch" href="/assets/js/8.1af69973.js"><link rel="prefetch" href="/assets/js/9.e612d3ea.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0cbbf90a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">bbigcd</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/netcore/" class="nav-link">NetCore</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">CSharp</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Other</a></div><div class="nav-item"><a href="/about-me/" class="nav-link">AboutMe</a></div><div class="nav-item"><a href="https://www.github.com/bbigcd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/netcore/" class="nav-link">NetCore</a></div><div class="nav-item"><a href="/csharp/" class="nav-link">CSharp</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Other</a></div><div class="nav-item"><a href="/about-me/" class="nav-link">AboutMe</a></div><div class="nav-item"><a href="https://www.github.com/bbigcd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>旧博客内容</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/post/oldblog/ASP.NET Web Api 2 Http 消息生命周期.html" class="sidebar-link">ASP.NET Web Api 2 Http 消息生命周期</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/ASP.NET中关于Async和Await的概述.html" class="sidebar-link">ASP.NET 中关于Async和Await的概述【译】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/AutoMapper使用学习笔记.html" class="sidebar-link">AutoMapper使用学习笔记</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/Dapper框架.html" class="sidebar-link">Dapper框架</a></li><li><a href="/post/oldblog/MongoDB-CSharp-Driver-快速入门指南.html" class="sidebar-link">MongoDB C# Driver 快速入门指南</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/NLog教程.html" class="sidebar-link">NLog教程</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/微服务-Consul服务治理发现.html" class="sidebar-link">微服务 - Consul服务治理发现</a></li><li><a href="/post/oldblog/微服务-JWT.html" class="sidebar-link">微服务 - JWT 算法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/微服务-Ocelot API 网关.html" class="active sidebar-link">微服务 - Ocelot API 网关</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/微服务-Polly熔断降级.html" class="sidebar-link">微服务 - Polly熔断降级</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/post/oldblog/Redis-CSharp-Driver.html" class="sidebar-link">Redis C# Driver - StackExchange.Redis</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="ocelot-api-网关（api-gateway）"><a href="#ocelot-api-网关（api-gateway）" class="header-anchor">#</a> Ocelot API 网关（API GateWay）</h3> <p>现有微服务的几点不足：</p> <ul><li>对于在微服务体系中、和 Consul 通讯的微服务来讲，使用服务名即可访问。但是对于手 机、web 端等外部访问者仍然需要和 N 多服务器交互，需要记忆他们的服务器地址、端 口号等。一旦内部发生修改，很麻烦，而且有时候内部服务器是不希望外界直接访问的。</li> <li>各个业务系统的人无法自由的维护自己负责的服务器；</li> <li>现有的微服务都是“我家大门常打开”，没有做权限校验。如果把权限校验代码写到每 个微服务上，那么开发工作量太大。</li> <li>很难做限流、收费等。</li></ul> <p>ocelot 中文文档：<code>https://blog.csdn.net/sD7O95O/article/details/79623654</code></p> <p>资料：<code>http://www.csharpkit.com/apigateway.html</code></p> <p>官网：<code>https://github.com/ThreeMammals/Ocelot</code></p> <h3 id="一、ocelot-基本设置"><a href="#一、ocelot-基本设置" class="header-anchor">#</a> 一、Ocelot 基本设置</h3> <p>Ocelot 就是一个提供了请求路由、安全验证等功能的 API 网关微服务。</p> <p>建一个空的 asp.net core 项目。</p> <p><code>Install-Package Ocelot</code></p> <p>项目根目录下创建 configuration.json</p> <p>ReRoutes 下就是多个路由规则</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>  
+   <span class="token property">&quot;ReRoutes&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+      <span class="token punctuation">{</span>  
+         <span class="token property">&quot;DownstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/api/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;DownstreamScheme&quot;</span><span class="token operator">:</span><span class="token string">&quot;http&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;DownstreamHostAndPorts&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token punctuation">{</span>  
+               <span class="token property">&quot;Host&quot;</span><span class="token operator">:</span><span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;Port&quot;</span><span class="token operator">:</span><span class="token number">5001</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/MsgService/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamHttpMethod&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token string">&quot;Get&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;Post&quot;</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>  
+         <span class="token property">&quot;DownstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/api/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;DownstreamScheme&quot;</span><span class="token operator">:</span><span class="token string">&quot;http&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;DownstreamHostAndPorts&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token punctuation">{</span>  
+               <span class="token property">&quot;Host&quot;</span><span class="token operator">:</span><span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;Port&quot;</span><span class="token operator">:</span><span class="token number">5003</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/ProductService/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamHttpMethod&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token string">&quot;Get&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;Post&quot;</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Program.cs的CreateWebHostBuilder中</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token punctuation">.</span><span class="token function">UseUrls</span><span class="token punctuation">(</span><span class="token string">&quot;http://127.0.0.1:8888&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ConfigureAppConfiguration</span><span class="token punctuation">(</span><span class="token punctuation">(</span>hostingContext<span class="token punctuation">,</span> builder<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	builder<span class="token punctuation">.</span><span class="token function">AddJsonFile</span><span class="token punctuation">(</span><span class="token string">&quot;configuration.json&quot;</span><span class="token punctuation">,</span><span class="token keyword">false</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在ConfigureAppConfiguration 中AddJsonFile是解析json配置文件的方法。为了确保直接在bin 下直接dotnet运行的时候能找到配置文件，所以要在vs中把配置文件的【复制到输出目录】设置为【如 果如果较新则复制】。</p> <p>Startup.cs中</p> <p>通过构造函数注入一个private IConfiguration Configuration;</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">ConfigureServices</span><span class="token punctuation">(</span><span class="token class-name">IServiceCollection</span> services<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    services<span class="token punctuation">.</span><span class="token function">AddOcelot</span><span class="token punctuation">(</span>Configuration<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Configure</span><span class="token punctuation">(</span><span class="token class-name">IApplicationBuilder</span> app<span class="token punctuation">,</span> <span class="token class-name">IHostingEnvironment</span> env<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>env<span class="token punctuation">.</span><span class="token function">IsDevelopment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        app<span class="token punctuation">.</span><span class="token function">UseDeveloperExceptionPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    app<span class="token punctuation">.</span><span class="token function">UseOcelot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//不要忘了写Wait</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样当访问<code>http://127.0.0.1:8888/MsgService/Send?msg=aaa</code>的时候就会访问</p> <p><code>http://127.0.0.1:5002/api/email/Send?msg=aaa</code></p> <p>UpstreamHttpMethod表示对什么样的请求类型做转发。</p> <h3 id="二、ocelot-consul"><a href="#二、ocelot-consul" class="header-anchor">#</a> 二、Ocelot + Consul</h3> <p>上面的配置还是把服务的ip地址写死了，Ocelot可以和Consul通讯，通过服务名字来配 置。</p> <p>只要改配置文件即可</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>  
+   <span class="token property">&quot;ReRoutes&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+      <span class="token punctuation">{</span>  
+         <span class="token property">&quot;DownstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/api/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;DownstreamScheme&quot;</span><span class="token operator">:</span><span class="token string">&quot;http&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamPathTemplate&quot;</span><span class="token operator">:</span><span class="token string">&quot;/MsgService/{url}&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UpstreamHttpMethod&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token string">&quot;Get&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;Post&quot;</span>
+         <span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;ServiceName&quot;</span><span class="token operator">:</span><span class="token string">&quot;MsgService&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;LoadBalancerOptions&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>  
+            <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span><span class="token string">&quot;RoundRobin&quot;</span>
+         <span class="token punctuation">}</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;UseServiceDiscovery&quot;</span><span class="token operator">:</span><span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;GlobalConfiguration&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>  
+      <span class="token property">&quot;ServiceDiscoveryProvider&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>  
+         <span class="token property">&quot;Host&quot;</span><span class="token operator">:</span><span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;Port&quot;</span><span class="token operator">:</span><span class="token number">8500</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>有多个服务就 ReRoutes 下面配置多组即可 访 问 http://localhost:8888/MsgService/SMS/Send_MI 即 可 ， 请 求 报 文 体</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	phoneNum<span class="token operator">:</span><span class="token string">&quot;110&quot;</span><span class="token punctuation">,</span>
+	msg<span class="token operator">:</span><span class="token string">&quot;aaaaaaaaaaaaa&quot;</span>
+<span class="token punctuation">}</span> 
+</code></pre></div><p>表示只要是/MsgService/开头的都会转给后端的服务名为&quot; MsgService &quot;的一台服务器，转发的路径&quot;/api/{url}&quot;。LoadBalancerOptions 中&quot;LeastConnection&quot;表示负载均衡算法是“选择当前最少连接数的服务器”，如果改为 RoundRobin 就是“轮询”。ServiceDiscoveryProvider是 Consul 服务器的配置。
+Ocelot 因为是流量中枢，也是可以做集群的。</p> <p>(*)也支持Eureka进行服务的注册、查找（<code>http://ocelot.readthedocs.io/en/latest/features/servicediscovery.html</code>），也支持访问 Service
+Fabric 中的服务（<code>http://ocelot.readthedocs.io/en/latest/features/servicefabric.html</code>）。</p> <h3 id="三、ocelot-其他功能简单介绍"><a href="#三、ocelot-其他功能简单介绍" class="header-anchor">#</a> 三、Ocelot 其他功能简单介绍</h3> <ul><li><p>1、 限流：</p> <p>文档：<code>http://ocelot.readthedocs.io/en/latest/features/ratelimiting.html</code></p> <p>需要和 Identity Server 一起使用，其他的限速是针对 clientId 限速，而不是针对 ip 限速。比如我调用微博的 api 开发了一个如鹏版新浪微博，我的 clientid 是 rpwb，然后限制了 1 秒钟只能调用 1000 次，那么所有用如鹏版微博这个 app 的所有用户加在一起，在一秒钟之内，不能累计超过 1000 次。目前开放式 api 的限流都是这个套路。</p> <p>如果要做针对 ip 的限速等，要自己在 Ocelot 前面架设 Nginx 来实现。</p></li> <li><p>2、请求缓存
+<code>http://ocelot.readthedocs.io/en/latest/features/caching.html</code>
+只支持 get，只要 url 不变，就会缓存。</p></li> <li><p>3、QOS (熔断器)</p> <p><code>http://ocelot.readthedocs.io/en/latest/features/qualityofservice.html</code></p></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time"> 2019年 12月 28日 15:53:50</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/post/oldblog/微服务-JWT.html" class="prev">微服务 - JWT 算法</a></span> <span class="next"><a href="/post/oldblog/微服务-Polly熔断降级.html">微服务 - Polly熔断降级</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.fa3e3824.js" defer></script><script src="/assets/js/2.230529bd.js" defer></script><script src="/assets/js/34.086724a3.js" defer></script>
+  </body>
+</html>
